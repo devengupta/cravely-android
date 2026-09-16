@@ -22,3 +22,10 @@ V0.1 intentionally has no cloud backend. The prototype is structured so local da
 
 ## Current prototype limitation
 The UI currently uses sample food/order data embedded in the app. It does not yet persist real order history locally or connect to Zomato/Swiggy MCP.
+
+
+## V0.2 rebuild
+
+This revision replaces the rough static interaction model with animated screen transitions, functional bottom navigation, press feedback, food imagery, working Home cards, detail navigation, back navigation, and animated Insights/Profile content. The UI remains a local prototype with sample data.
+
+Animation direction: short FastOutSlowIn transitions, subtle scale/alpha movement, staggered recommendation reveals, animated chart bars, and touch feedback.
