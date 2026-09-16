@@ -1,1 +1,22 @@
-<resources><color name="transparent">#00000000</color></resources>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cream">#FFF8F0</color>
+    <color name="ink">#26231F</color>
+    <color name="muted">#6F675E</color>
+    <color name="hairline">#EBE2D8</color>
+    <color name="green">#0A4837</color>
+    <color name="greenLight">#D8F0E4</color>
+    <color name="peach">#FFDDB9</color>
+    <color name="pink">#F9DEE4</color>
+    <color name="lilac">#E9E0F6</color>
+    <color name="sky">#DCEDF6</color>
+    <color name="butter">#FCECBF</color>
+    <color name="red">#D63F41</color>
+    <color name="orange">#E47E2E</color>
+    <color name="gold">#F2AA0C</color>
+    <color name="zomato">#E23744</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="pillGrey">#F1ECE4</color>
+    <color name="scrim">#66000000</color>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="@drawable/bg_card" android:padding="10dp" android:layout_marginBottom="10dp" android:foreground="?android:selectableItemBackground">
+    <ImageView android:id="@+id/img" android:layout_width="92dp" android:layout_height="92dp" android:scaleType="centerCrop" android:background="@drawable/bg_round_img" android:clipToOutline="true"/>
+    <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginStart="12dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView android:id="@+id/name" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="@color/ink" android:fontFamily="sans-serif-medium" android:textStyle="bold" android:lineSpacingMultiplier="1.05"/>
+            <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_bookmark" android:tint="@color/ink" android:layout_marginStart="6dp"/>
+        </LinearLayout>
+        <TextView android:id="@+id/rest" style="@style/Small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginTop="4dp">
+            <ImageView android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/ic_star" android:tint="@color/gold"/>
+            <TextView android:id="@+id/rating" style="@style/Small" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginStart="3dp"/>
+            <TextView android:id="@+id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="13sp" android:textColor="@color/ink" android:fontFamily="sans-serif-medium" android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginTop="7dp">
+            <TextView android:id="@+id/match" style="@style/Tag" android:background="@drawable/bg_tag_mint" android:textColor="@color/green" android:drawableStart="@drawable/ic_check" android:drawableTint="@color/green"/>
+            <TextView android:id="@+id/newtag" style="@style/Tag" android:layout_marginStart="6dp" android:background="@drawable/bg_tag_sky" android:textColor="#1D4E89" android:drawableStart="@drawable/ic_new" android:drawableTint="#1D4E89" android:text="New for you"/>
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="end" android:layout_marginTop="6dp" android:text="Why this?" style="@style/Small" android:textColor="@color/ink" android:drawableEnd="@drawable/ic_chevron_down" android:drawableTint="@color/ink" android:drawablePadding="2dp" android:gravity="center_vertical"/>
+    </LinearLayout>
+</LinearLayout>

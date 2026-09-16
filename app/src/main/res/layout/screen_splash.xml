@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#2A1A12">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:src="@drawable/splash"/>
+    <TextView android:id="@+id/start" android:layout_width="match_parent" android:layout_height="52dp" android:layout_gravity="bottom" android:layout_marginStart="28dp" android:layout_marginEnd="28dp" android:layout_marginBottom="44dp" android:background="@drawable/bg_btn_outline" android:gravity="center" android:text="Let’s Get Started   →" android:textColor="@color/ink" android:textSize="15sp" android:fontFamily="sans-serif-medium" android:elevation="4dp"/>
+</FrameLayout>

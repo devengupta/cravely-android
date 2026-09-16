@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:scrollbars="none">
+<LinearLayout style="@style/Screen" android:paddingBottom="20dp">
+    <include layout="@layout/bar_top"/>
+    <TextView style="@style/H1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Your next adventure\nis Korean cuisine."/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+        <TextView style="@style/Body" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="70dp" android:text="You love spicy food, paneer and bold flavours. Here are some dishes that bridge your taste with something new."/>
+        <ImageView android:layout_width="64dp" android:layout_height="64dp" android:layout_gravity="end|top" android:layout_marginTop="-6dp" android:src="@drawable/ill_ingredients" android:scaleType="fitCenter"/>
+    </FrameLayout>
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:scrollbars="none">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView style="@style/Pill" android:background="@drawable/bg_pill_green" android:textColor="@color/white" android:text="Korean"/>
+            <TextView style="@style/Pill" android:background="@drawable/bg_pill_grey" android:textColor="@color/muted" android:text="Thai"/>
+            <TextView style="@style/Pill" android:background="@drawable/bg_pill_grey" android:textColor="@color/muted" android:text="Japanese"/>
+            <TextView style="@style/Pill" android:background="@drawable/bg_pill_grey" android:textColor="@color/muted" android:text="Mexican"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/bg_card" android:padding="16dp" android:layout_marginTop="18dp" android:elevation="1dp">
+        <TextView style="@style/H2" android:textSize="15sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="You’re ready for this"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="16dp" android:layout_marginTop="18dp" android:layout_marginStart="24dp" android:layout_marginEnd="24dp">
+            <View android:layout_width="match_parent" android:layout_height="2dp" android:layout_gravity="center_vertical" android:background="#BFB7AD"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">
+                <FrameLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent"><View android:layout_width="12dp" android:layout_height="12dp" android:layout_gravity="start|center_vertical" android:background="@drawable/dot_green"/></FrameLayout>
+                <FrameLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent"><View android:layout_width="12dp" android:layout_height="12dp" android:layout_gravity="center" android:background="@drawable/dot_green"/></FrameLayout>
+                <FrameLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent"><View android:layout_width="12dp" android:layout_height="12dp" android:layout_gravity="center" android:background="@drawable/dot_green"/></FrameLayout>
+                <FrameLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent"><View android:layout_width="12dp" android:layout_height="12dp" android:layout_gravity="end|center_vertical" android:background="@drawable/dot_red"/></FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="8dp">
+            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center" android:textSize="11sp" android:textColor="@color/ink" android:text="Indian\n(Comfort)" android:lineSpacingMultiplier="1.15"/>
+            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center" android:textSize="11sp" android:textColor="@color/ink" android:text="Spicy\n(Flavours)" android:lineSpacingMultiplier="1.15"/>
+            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center" android:textSize="11sp" android:textColor="@color/ink" android:text="Paneer\n(Ingredient)" android:lineSpacingMultiplier="1.15"/>
+            <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="center" android:textSize="11sp" android:textColor="@color/red" android:fontFamily="sans-serif-medium" android:text="Korean\n(Next Stop)" android:lineSpacingMultiplier="1.15"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView style="@style/Hand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="26dp" android:text="“ You don’t just eat. You explore. ”"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="170dp" android:layout_marginTop="10dp">
+        <ImageView android:layout_width="160dp" android:layout_height="160dp" android:layout_gravity="start|bottom" android:src="@drawable/ill_trybowl" android:scaleType="fitStart"/>
+    </FrameLayout>
+    <LinearLayout android:id="@+id/btn_bridges" android:layout_width="match_parent" android:layout_height="50dp" android:orientation="horizontal" android:gravity="center" android:background="@drawable/bg_btn_green" android:layout_marginTop="8dp" android:foreground="?android:selectableItemBackground">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Show me Korean dishes I’ll love" android:textColor="@color/white" android:textSize="14sp" android:fontFamily="sans-serif-medium"/>
+        <ImageView android:layout_width="18dp" android:layout_height="18dp" android:layout_marginStart="10dp" android:src="@drawable/ic_arrow" android:tint="@color/white"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

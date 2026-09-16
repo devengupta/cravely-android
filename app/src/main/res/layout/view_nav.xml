@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/nav"
+    android:layout_width="match_parent" android:layout_height="64dp" android:orientation="horizontal" android:background="@color/cream" android:elevation="8dp">
+    <LinearLayout android:id="@+id/nav_home" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:background="?android:selectableItemBackgroundBorderless">
+        <ImageView android:id="@+id/nav_home_i" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_home"/><TextView android:id="@+id/nav_home_t" style="@style/NavLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Home"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/nav_discover" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:background="?android:selectableItemBackgroundBorderless">
+        <ImageView android:id="@+id/nav_discover_i" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_discover"/><TextView android:id="@+id/nav_discover_t" style="@style/NavLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Discover"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/nav_insights" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:background="?android:selectableItemBackgroundBorderless">
+        <ImageView android:id="@+id/nav_insights_i" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_insights"/><TextView android:id="@+id/nav_insights_t" style="@style/NavLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Insights"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/nav_profile" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:background="?android:selectableItemBackgroundBorderless">
+        <ImageView android:id="@+id/nav_profile_i" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_profile"/><TextView android:id="@+id/nav_profile_t" style="@style/NavLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Profile"/>
+    </LinearLayout>
+</LinearLayout>

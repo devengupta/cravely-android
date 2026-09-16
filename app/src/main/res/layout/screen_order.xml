@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:scrollbars="none">
+<LinearLayout style="@style/Screen" android:paddingBottom="20dp">
+    <include layout="@layout/bar_top"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingEnd="96dp">
+            <TextView style="@style/H1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tonight, I’d order\nthis for you."/>
+            <TextView style="@style/Body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Based on your taste, past orders, current deals and the time of day, here’s my pick."/>
+        </LinearLayout>
+        <ImageView android:layout_width="96dp" android:layout_height="90dp" android:layout_gravity="end|top" android:layout_marginTop="-10dp" android:src="@drawable/ill_mealtime" android:scaleType="fitCenter"/>
+    </FrameLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/bg_card" android:padding="10dp" android:layout_marginTop="14dp" android:elevation="1dp">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="190dp">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:src="@drawable/dish_ramen" android:background="@drawable/bg_round_img" android:clipToOutline="true"/>
+            <TextView style="@style/Tag" android:layout_gravity="top|end" android:layout_margin="10dp" android:background="@drawable/bg_pill_green" android:textColor="@color/white" android:layout_height="24dp" android:drawableStart="@drawable/ic_check" android:drawableTint="@color/white" android:text="89% match"/>
+        </FrameLayout>
+        <TextView style="@style/H2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginStart="4dp" android:text="Korean Veg Ramen Bowl"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginStart="4dp" android:layout_marginTop="2dp">
+            <TextView style="@style/Small" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Soulfully Yours"/>
+            <ImageView android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/ic_star" android:tint="@color/gold"/>
+            <TextView style="@style/Small" android:textColor="@color/ink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="3dp" android:text="4.4  (2.1k)"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginStart="4dp" android:layout_marginTop="10dp">
+            <TextView android:id="@+id/old_price" style="@style/Body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹399"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:text="₹279" android:textColor="@color/red" android:textSize="18sp" android:fontFamily="sans-serif-medium" android:textStyle="bold"/>
+            <TextView style="@style/Tag" android:layout_marginStart="10dp" android:background="@drawable/bg_tag_mint" android:textColor="@color/green" android:text="30% OFF"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/hairline" android:layout_marginTop="14dp" android:layout_marginBottom="6dp"/>
+        <LinearLayout android:id="@+id/reasons" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginStart="4dp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/btn_zomato" android:layout_width="match_parent" android:layout_height="52dp" android:orientation="horizontal" android:gravity="center" android:background="@drawable/bg_btn_green" android:layout_marginTop="18dp" android:foreground="?android:selectableItemBackground">
+        <TextView android:layout_width="24dp" android:layout_height="24dp" android:background="@drawable/bg_zomato" android:gravity="center" android:text="Z" android:textColor="@color/white" android:textSize="14sp" android:textStyle="bold"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:text="Add to Cart on Zomato" android:textColor="@color/white" android:textSize="14sp" android:fontFamily="sans-serif-medium"/>
+        <ImageView android:layout_width="18dp" android:layout_height="18dp" android:layout_marginStart="12dp" android:src="@drawable/ic_arrow" android:tint="@color/white"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/btn_more" android:layout_width="match_parent" android:layout_height="50dp" android:orientation="horizontal" android:gravity="center" android:background="@drawable/bg_btn_outline" android:layout_marginTop="10dp" android:foreground="?android:selectableItemBackground">
+        <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_refresh" android:tint="@color/ink"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:text="Show Me More Options" android:textColor="@color/ink" android:textSize="14sp" android:fontFamily="sans-serif-medium"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

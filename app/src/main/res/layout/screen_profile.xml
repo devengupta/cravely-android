@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:scrollbars="none">
+<LinearLayout style="@style/Screen" android:paddingBottom="20dp">
+    <include layout="@layout/bar_top"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingEnd="80dp">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🌶️" android:textSize="22sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:text="The Masala Explorer" android:textColor="@color/red" android:textSize="20sp" android:fontFamily="sans-serif-medium" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:text="👑" android:textSize="16sp"/>
+            </LinearLayout>
+            <TextView style="@style/Body" android:textColor="@color/ink" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="You love taking things you already love — paneer, cheese, spice and comfort food — and experiencing them in new forms. You’re adventurous, but selectively adventurous."/>
+        </LinearLayout>
+        <ImageView android:layout_width="84dp" android:layout_height="90dp" android:layout_gravity="end|top" android:layout_marginTop="4dp" android:src="@drawable/ill_profile" android:scaleType="fitCenter"/>
+    </FrameLayout>
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:scrollbars="none">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView style="@style/Pill" android:layout_height="28dp" android:background="@drawable/bg_pill_grey" android:textColor="@color/ink" android:text="Comfort Food"/>
+            <TextView style="@style/Pill" android:layout_height="28dp" android:background="@drawable/bg_pill_grey" android:textColor="@color/ink" android:text="Spicy"/>
+            <TextView style="@style/Pill" android:layout_height="28dp" android:background="@drawable/bg_pill_grey" android:textColor="@color/ink" android:text="Indulgent"/>
+            <TextView style="@style/Pill" android:layout_height="28dp" android:background="@drawable/bg_pill_grey" android:textColor="@color/ink" android:text="Curious"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/bg_card" android:padding="16dp" android:layout_marginTop="18dp" android:elevation="1dp">
+        <TextView style="@style/H2" android:textSize="15sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Your Food DNA"/>
+        <LinearLayout android:id="@+id/dna" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="8dp"/>
+    </LinearLayout>
+    <TextView style="@style/Hand" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:paddingStart="8dp" android:paddingEnd="8dp" android:lineSpacingMultiplier="1.35" android:text="“ Give me something new,\n   but make sure I recognise at least\n   one thing I love. ”"/>
+</LinearLayout>
+</ScrollView>
