@@ -5,10 +5,13 @@ on:
   push:
     branches: [ main, master ]
 
+permissions:
+  contents: read
+  issues: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -25,7 +28,9 @@ jobs:
           gradle-version: '8.9'
 
       - name: Build debug APK
-        run: gradle assembleDebug --stacktrace
+        run: |
+          set -o pipefail
+          gradle assembleDebug --stacktrace 2>&1 | tee build.log
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
@@ -34,3 +39,11 @@ jobs:
           path: app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
           retention-days: 30
+
+      - name: Post build log on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          { echo '```'; grep -nE "error:|warning:|What went wrong|FAILED|\.java:[0-9]+" build.log | head -80; echo; echo '--- tail ---'; tail -60 build.log; echo '```'; } > body.md
+          gh issue create --title "Build failed: run ${{ github.run_number }}" --body-file body.md
